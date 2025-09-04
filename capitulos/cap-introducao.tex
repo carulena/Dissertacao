@@ -1,0 +1,39 @@
+%%%% CAPÍTULO 1 - INTRODUÇÃO
+%%
+%% Deve apresentar uma visão global da pesquisa, incluindo: breve histórico, importância e justificativa da escolha do tema,
+%% delimitações do assunto, formulação de hipóteses e objetivos da pesquisa e estrutura do trabalho.
+
+%% Título e rótulo de capítulo (rótulos não devem conter caracteres especiais, acentuados ou cedilha)
+\chapter{Introdução}\label{cap:introducao}
+As abelhas desempenham papel fundamental na polinização de plantas em todo o mundo, sendo responsáveis por cerca de 80\% da polinização dos vegetais existentes \cite{roberto_de_de_alex_rodrigues_2020}. No Brasil, a espécie mais comum, \textit{Apis mellifera}, que tem suas origens na região da Europa, África e Asia Oriental, pode representar risco aos seres humanos, dificultando sua criação. Entretanto, a fauna brasileira abriga outras espécies capazes de polinizar e produzir mel sem oferecer esse perigo \cite{costa_viana_farias_santos_2012}. Essas abelhas são dóceis e vivem em colônias de fácil manejo, sendo conhecidas como melíponas, por pertencerem à tribo \textit{Meliponini} \footnote{Nível de classificação taxonômica existente entre subfamília e gênero}, também chamadas de abelhas-sem-ferrão. 
+A prática de criação dessas abelhas é conhecida como meliponicultura, sendo elas produtoras de mel, cera e resina. Estas diferem das abelhas com ferrão por possuírem ferrões atrofiados, incapazes de ferroar \cite{Freitas:2000}, além de apresentarem variação na estrutura das colmeias e ninhos, que podem ser encontrados em troncos de árvores, fendas de pedras ou no solo \cite{Santos_2010}.
+
+
+
+A prática de meliponicultura é milenar, havendo registros de que povos maias a utilizavam tanto para a extração de mel quanto para promover a diversidade ambiental \cite{rodrigues2005etnoconhecimento}. Atualmente, a prática é comum nas regiões norte e nordeste do Brasil, onde contribui para a complementação de renda de diversas famílias, que comercializam o mel e a cera \cite{Santos:2020}. A importância dessas abelhas vai além do aspecto econômico: elas são responsáveis pela polinização de cerca de 30\% da flora presente na Caatinga e 90\% da da Floresta Amazônica \cite{Pereira:2017}. Contudo, o desmatamento e as queimadas representam sérias ameaças às espécies \citeonline{kerr:2001}. A diversidade de espécies de abelhas é essencial para a ecologia, a economia e a alimentação, visto que participam da polinização de diversas categorias de plantas \cite{dos2021diversidade}.
+
+Nos últimos anos, pesquisadores e agricultores têm observado uma redução preocupante na população de abelhas \cite{BERINGER_MACIEL_TRAMONTINA_2019}. Embora as causas sejam discutidas, há consenso de que a ação humana sobre o meio ambiente é um fator central. Diante disso, torna-se evidente a necessidade de ações voltadas à preservação e criação de diferentes espécies, garantindo a continuidade da polinização e a manutenção da flora local. No entanto, é fundamental que a criação leve em conta o \textit{habitat} natural, as condições ambientais e a adequação dos arredores da colônia, de modo a não prejudicar os animais nem comprometer a qualidade do mel produzido. Considerando a importância e a necessidade de expandir essa prática, este trabalho propõe um modelo de aprendizado de máquina aliado a análises estatísticas, climáticas e ambientais para indicar a espécie de abelha mais adequada para criação em determinada localidade.
+
+
+\textbf{****EXPLICAR MELHOR O MODELO PROPOSTO  ******}
+O sistema proposto recebe a localização do usuário por meio de uma aplicação \textit{web} e, a partir das coordenadas (latitude e longitude), obtém índices geográficos como \gls{ndvi} e \gls{ndwi} e índices climáticos do local. Esses dados são utilizados como \textit{features} para os modelos, que retornams a probabilidade de cada espécie de abelha se adaptar ao local.
+
+
+\section{Objetivos}
+
+\subsection{Objetivo Geral}
+
+\textbf{**** MODELO PRECISA ESTAR AQUI ******}
+Desenvolver um sistema \textit{web} capaz de, a partir da localização geográfica (latitude e longitude) informada pelo usuário e das características geográficas (NDVI e NDWI) e climáticas (temperatura média e precipitação média), indicar quais espécies de abelhas apresentam maior probabilidade de adaptação ao local.
+
+\subsection{Objetivos Específicos}
+
+
+\begin{itemize}
+    \item Extrair e processar índices \gls{ndvi} e \gls{ndwi} a partir de imagens do satélite \textit{Sentinel-2}.
+    \item Obter e processar dados climáticos (temperatura média e precipitação média) a partir do banco de dados \textit{WorldClim}.
+    \item Integrar os dados geográficos e climáticos para compor as \textit{features} do modelo preditivo.
+    \item Desenvolver e treinar um modelo de aprendizado de máquina para estimar a probabilidade de adaptação de espécies de abelhas a uma determinada localidade.\textbf{******* É NECESSÁRIO COLOCAR AQUI QUE O MODELO SERÁ DESENVOLVIDO DE ACORDO COM A LITERATURA ******}
+    \item Implementar uma aplicação \textit{web} para coleta da localização do usuário, processamento dos dados e apresentação dos resultados.
+\end{itemize}
+

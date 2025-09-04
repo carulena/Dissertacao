@@ -1,0 +1,507 @@
+%%%% REFERÊNCIAS
+%%
+%% Conjunto padronizado de elementos descritivos retirados de um documento, que permite sua identificação individual.
+%%
+%% Cada entrada no arquivo BibTeX segue um formato padrão. Este formato muda ligeiramente baseado no tipo de entrada, mas a sintaxe
+%% continua a mesma.
+%%
+%% O rótulo de cada entrada não pode conter caracteres especiais, acentuados ou cedilha.
+%%
+%% A formatação do texto no campo AUTHOR deve obedecer algumas regras:
+%%   - Acento agudo:        á = {\'a}.
+%%   - Acento crase:        à = {\`a}.
+%%   - Acento til:          ã = {\~a}.
+%%   - Acento circunflexo:  ê = {\^e}.
+%%   - Acento trema:        ü = {\u}.
+%%   - Acento na letra i:   í = {\'\i}.
+%%   - Cedilha:             ç = {\c{c}}.
+%%   - Sobrenome composto:  Santos, Filho, Jos{\'e} C. S.; da Silva, Erivanildo Lopes.
+%%   - Nome de organização: {\mbox IONA Technologies PLC}.
+%%
+%% A formatação do texto no campo TITLE deve obedecer algumas regras (também válidas para o texto no campo AUTHOR):
+%%   - MAIÚSCULAS: REAL = {REAL}.
+%%   - Minúsculas: real = {real}.
+%%   - CamelCase:  Real = {R}eal.
+
+%% TIPOS DE ENTRADA
+%%
+%% Ao inserir uma referência no banco de dados, a primeira coisa a decidir é o tipo de entrada. Existem vários tipos de entrada, mas
+%% não são completas, porém são suficientes para o BibTeX fornecer entradas para lidar com praticamente qualquer tipo de referência
+%% razoavelmente bem.
+
+%% ARTICLE - Um artigo de um jornal ou revista.
+%%   - Campos requeridos: AUTHOR, TITLE, JOURNAL e YEAR.
+%%   - Campos opcionais: VOLUME, NUMBER, PAGES, MONTH e NOTE.
+
+% SEBRAE. Entenda a importância da normalização para o seu negócio. Normas técnicas. 8 jan. 2016. Disponível em: http://www.sebrae.com.br/sites/PortalSebrae/artigos/entenda-a-importancia-da-normalizacao-para-o-seu-negocio. Acesso em: 11 mar. 2025. (Modelo de referência: material disponível na Internet).
+
+@MASTERSTHESIS{miyaji_2024,
+  AUTHOR  = {Renato Okabayashi Miyaji},
+  TITLE   = {Comparação e avaliação de técnicas de aprendizado de máquina para modelagem de distribuição de espécies na região da Bacia Amazônica},
+  SCHOOL  = {Escola Politécnica, Universidade de São Paulo},
+  YEAR    = {2024},
+  ADDRESS = {São Paulo},
+  PAGES   = {106}
+}
+
+
+@MASTERSTHESIS{fabiana:2009,
+  AUTHOR  = {Fabiana Soares Santana},
+  TITLE   = {Uma infraestrutura orientada a serviços para a modelagem de nicho ecológico},
+  SCHOOL  = {Escola Politécnica, Universidade de São Paulo},
+  YEAR    = {2009},
+  ADDRESS = {São Paulo},
+  PAGES   = {141}
+}
+@article{giannini:2012,
+  author = {Giannini, Tereza C. and Siqueira, Marinez F. and Acosta, André L. and Barreto, Francisco C.C. and Saraiva, Antonio M. and Alves-dos-Santos, Isabel},
+  title = {Desafios atuais da modelagem preditiva de distribuição de espécies},
+  journal = {Rodriguésia},
+  year = {2012},
+  month = {sep.},
+  number = {3},
+  pages = {733-749},
+}
+‌
+@BOOK{ecological:2004,
+  AUTHOR    = {Jonathan M. CHASE and Mathew A. LEIBOLD},
+  TITLE     = {Ecological niches},
+  SUBTITLE   = {linking classical and contemporary approaches},
+  PUBLISHER = {The University Of Chicago Press},
+  YEAR      = {2003},
+  ADDRESS   = {United Stated of America},
+  URL = {https://books.google.com.br/books?id=Tj9bEAAAQBAJ&lpg=PR5&ots=6A6t2sdmBC&dq=Ecological%20niches%3A%20linking%20classical%20and%20contemporary%20approaches&lr&pg=PR4#v=onepage&q&f=false},
+  URLACCESSDATE = {20 jul. 2025},
+}
+‌@ARTICLE{peterson:2012, title={Species Distribution Modeling and Ecological Niche Modeling: Getting the Concepts Right}, volume={10}, DOI={https://doi.org/10.4322/natcon.2012.019}, number={2}, journal={Natureza & Conservação}, author={Peterson, A. Townsend and Soberón, Jorge}, year={2012}, pages={102–107} }
+@incollection{Mota-Vargas:2019,
+  author       = {Mota‐Vargas, Claudio and Encarnación‐Luévano, Alondra and Ortega‐Andrade, H. Mauricio and Prieto‐Torres, David A. and Peña‐Peniche, Alexander and Rojas‐Soto, Octavio R.},
+  title        = {Una breve introducción a los modelos de nicho ecológico},
+  editor       = {Moreno, Cristina E.},
+  booktitle    = {La biodiversidad en un mundo cambiante: Fundamentos teóricos y metodológicos para su estudio},
+  publisher    = {Universidad Autónoma del Estado de Hidalgo / Libermex},
+  address      = {Ciudad de México},
+  year         = {2019},
+  pages        = {39–63},
+  isbn         = {9786074825985},
+}
+@article{liu_white_newell_2010, title={Measuring and comparing the accuracy of species distribution models with presence-absence data}, volume={34}, url={https://nsojournals.onlinelibrary.wiley.com/doi/abs/10.1111/j.1600-0587.2010.06354.x}, DOI={https://doi.org/10.1111/j.1600-0587.2010.06354.x}, number={2}, journal={Ecography}, publisher={Wiley}, author={Liu, Canran and White, Matt and Newell, Graeme}, year={2010}, month={Aug}, pages={232–243} }
+
+‌@article{elith_leathwick_2009, title={Species Distribution Models: Ecological Explanation and Prediction Across Space and Time}, volume={40}, url={https://www.annualreviews.org/content/journals/10.1146/annurev.ecolsys.110308.120159}, DOI={https://doi.org/10.1146/annurev.ecolsys.110308.120159}, number={1}, journal={Annual Review of Ecology Evolution and Systematics}, publisher={Annual Reviews}, author={Elith, Jane and Leathwick, John R}, year={2009}, month={Sep}, pages={677–697} }
+
+‌@article{beery_cole_parker_perona_winner_2021, title={Species Distribution Modeling for Machine Learning Practitioners: A Review}, DOI={https://doi.org/10.1145/3460112.3471966}, journal={ACM SIGCAS Conference on Computing and Sustainable Societies (COMPASS)}, author={Beery, Sara and Cole, Elijah and Parker, Joseph and Perona, Pietro and Winner, Kevin}, year={2021}, month={Jun} }
+
+@mastersthesis{sasso2022sdm,
+  author       = {Matheus Gustavo Alves Sasso},
+  title        = {Species distribution modeling applied to MILPA agroecological consortium in Brazil: Modelagem de distribuição de espécies aplicada ao consórcio agroecológico MILPA no Brasil},
+  school       = {Universidade Estadual de Campinas, Faculdade de Engenharia Elétrica e de Computação},
+  type         = {Dissertação de Mestrado},
+  year         = {2022},
+  address      = {Campinas, SP, Brasil},
+  month        = aug,
+  advisor      = {Paula Dornhofer Paro Costa},
+  url          = {https://repositorio.unicamp.br/acervo/detalhe/1254329}
+}
+‌
+@INPROCEEDINGS{zhang:2017,
+  author={Zhang, Jian and Li, Sen},
+  booktitle={2017 International Conference on Industrial Informatics - Computing Technology, Intelligent Technology, Industrial Information Integration (ICIICII)}, 
+  title={A Review of Machine Learning Based Species' Distribution Modelling}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={199-206},
+  keywords={Biological system modeling;Support vector machines;Learning systems;Radio frequency;Data models;Vegetation;Predictive models;random forest;MaxEnt;support vector machine;artificial neural network;deep learning},
+  doi={10.1109/ICIICII.2017.76}}
+
+ @article{Ramampiandra:2023, title={A comparison of machine learning and statistical species distribution models: Quantifying overfitting supports model interpretation}, volume={481}, ISSN={0304-3800}, url={https://www.sciencedirect.com/science/article/pii/S0304380023000819}, DOI={https://doi.org/10.1016/j.ecolmodel.2023.110353},  journal={Ecological Modelling}, author={Ramampiandra, Emma Chollet and Scheidegger, Andreas and Wydler, Jonas and Schuwirth, Nele}, year={2023}, pages={110353} }
+@mastersthesis{marques2018ndvi_ndwis,
+  author       = {Marques, Francisco José Mendonça},
+  title        = {Utilidade agronómica dos índices NDVI e NDWI obtidos por imagens dos satélites Sentinel‑2: estudos de caso nas culturas de Trigo, Brócolo e Arroz},
+  school       = {Universidade de Évora, Escola de Ciências e Tecnologia, Departamento de Engenharia Rural},
+  type         = {Dissertação de Mestrado em Engenharia Agronómica},
+  year         = {2018},
+  address      = {Évora, Portugal},
+  advisor      = {José Rafael Marques da Silva}
+}
+
+ @article{Gao_1996, title={NDWI - A Normalized Difference Water Index for Remote Sensing of Vegetation Liquid Water from Space}, volume={58}, DOI={10.1016/S0034-4257(96)00067-3}, journal={Remote Sensing of Environment}, author={Gao, Bo-Cai}, year={1996}, month=dec, pages={257–266} }
+@article{mcfeeters_1996, title={The use of the Normalized Difference Water Index (NDWI) in the delineation of open water features}, volume={17}, DOI={https://doi.org/10.1080/01431169608948714}, number={7}, journal={International Journal of Remote Sensing}, author={McFeeters, S. K.}, year={1996}, month={May}, pages={1425–1432} }
+
+‌   @inproceedings{Santos:2017, title={Índice de diferença normalizada da água -NDWI para a obtenção da morfologia do canal de acesso e bacia de evolução portuária -Porto de Niterói (RJ)}, author={da Silveira Pereira, Rodrigo and Souza, Aurélio and Santos, Paulo}, year={2017}, month=may }
+
+@article{simoes:2021, title={Uso de sensoriamento remoto no monitoramento de sólidos em suspensão do reservatório de uma usina hidrelétrica na transição Cerrado-Amazônia}, volume={15}, url={https://periodicos.ufpb.br/ojs2/index.php/gaia/article/view/57559}, DOI={https://doi.org/10.22478/ufpb.1981-1268.2021v15n3.57559}, number={3}, journal={Gaia Scientia}, author={Simões, Juliana Marestoni and Almeida, Frederico Terra de and Uliana, Eduardo Morgan and Vendrusculo, Laurimar Gonçalves}, year={2021}, month={Nov} }
+
+‌@book{neto:1997,
+  author    = {Paulo Nogueira‑Neto},
+  title     = {Vida e Criação de Abelhas Indígenas sem Ferrão},
+  year      = {1997},
+  publisher = {Nogueirapis},
+  address   = {São Paulo},
+  pages     = {445},
+  isbn      = {85‑86525‑01‑4}
+}
+
+@incollection{Pereira:2020,
+  author    = {Gatto, Adriana and Lima, Daniel Miranda and Almeida, Matheus Vieira},
+  title     = {MELIPONICULTURA: OPORTUNIDADE DE NEGÓCIO
+SUSTENTÁVEL NA AMAZÔNIA ORIENTAL},
+  booktitle = {Ambiente, política e sociedade: uma contribuição da ecologia humana},
+  editor    = {Pereira, Daniel Santiago and Deus, Jéssyca Camilly Silva de and Holanda-Neto, João Paulo de and Oliveira, Hermógenes José Sá de},
+  publisher = {Embrapa},
+  year      = {2020},
+  pages     = {19--40},
+  address   = {Brasília, DF},
+  url       = {https://www.alice.cnptia.embrapa.br/bitstream/doc/1134178/1/amb-pol-soc-ec-1cap3.pdf}
+}
+
+‌
+ @article{kerr:2001, title={Aspectos pouco mencionados da biodiversidade amazônica}, journal={Parcerias Estratégicas}, author={Kerr, Warwick Estevam and Carvalho, Gislene Almeida and Silva, Alexandre Coletto and Assis, Maria da Glória Paiva de}, year={2001} }
+
+
+@article{cortopassi:2006, title={Global meliponiculture: challenges and opportunities}, volume={37}, url={https://hal.archives-ouvertes.fr/file/index/docid/892208/filename/hal-00892208.pdf}, DOI={https://doi.org/10.1051/apido:2006027}, number={2}, journal={Apidologie}, author={Cortopassi-Laurino, Marilda and Imperatriz-Fonseca, Vera Lucia and Roubik, David Ward and Dollin, Anne and Heard, Tim and Aguilar, Ingrid and Venturieri, Giorgio C. and Eardley, Connal and Nogueira-Neto, Paulo}, year={2006}, month={Mar}, pages={275–292} }
+
+‌ @article{viana:2012, title={Meliponicultura em comunidades tradicionais do Amazonas}, author={Viana, Tiago and Góes, Carlos Alexandre}, year={2012}, language={pt} }
+
+
+
+@misc{icmbio2021portaria665,
+  author       = {{Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio)}},
+  title        = {Portaria n{\,}665, de 3 de novembro de 2021: Institui o Catálogo Nacional das Abelhas Nativas Sem Ferrão},
+  howpublished = {Diário Oficial da União},
+  year         = {2021},
+  month        = nov,
+  day          = {3},
+  institution  = {Ministério do Meio Ambiente / ICMBio},
+  note         = {Publica o Catálogo Nacional das Abelhas Nativas Sem Ferrão conforme Resolução CONAMA nº 496/2020},
+  url          = {https://in.gov.br/en/web/dou/-/portaria-n-665-de-3-de-novembro-de-2021-357715380},
+}
+ @article{maia:2015, title={Meliponicultura no Rio Grande do Norte}, volume={37}, rights={Copyright (c)}, ISSN={2527-2179}, url={https://bjvm.org.br/BJVM/article/view/425},  number={44}, journal={Brazilian Journal of Veterinary Medicine}, author={Maia, Ulysses Madureira and Jaffe, Rodolfo and Carvalho, Airton Torres and Fonseca, Vera Lucia Imperatriz}, year={2015}, month=dec, pages={327–333}, language={pt} }
+@book{drummond:2024, title={O produtor pergunta, a Embrapa responde}, url={https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1164026/1/Custos-e-viabilidade-economica-Meliponicultura-2024.pdf}, author={Drumond, Patrícia and Almeida, Gislene and Sídia, Carvalho-Zilse and Rogério, Witter and De Oliveira, Marcos and Murilo, Alves and Drummond, Sérgio}, year={2024} }
+
+‌@misc{menezes2022fichasMeliponicultura,
+  author       = {Menezes, Cristiano and Alves, Denise A. and Lucena, Daercio A.\ de\ A. and Almeida, Eduardo A.\ B. and Aleixo, Kátia P. and Assad, Ana L.},
+  title        = {Fichas catalográficas de espécies de abelhas sem ferrão relevantes para a meliponicultura},
+  howpublished = {Anais do XXVIII Congresso Brasileiro de Entomologia, Fortaleza, CE},
+  year         = {2022},
+  month        = aug,
+  note         = {Resumo em anais; disponíveis na plataforma A.B.E.L.H.A. em parceria com ICMBio},
+  url          = {https://abelha.org.br/fichas-catalograficas-das-especies-relevantes-para-a-meliponicultura-2/}
+}
+
+@PHDTHESIS{ 2025:1383010394,
+ 	title = {Modelagem de nicho ecológico de Aldina heterophylla Spruce ex Benth, Mezilaurus itauba (Meisn.) Taub. ex Mez. e Virola surinamensis (Rol.) Warb.: impactos ambientais e conservação na Amazônia},
+ 	year = {2025},
+ 	url ={ https://tede.ufam.edu.br/handle/tede/11016},
+ 	publisher = {Universidade Federal do Amazonas},
+ 	scholl = {Programa de Pós-graduação em Ciências do Ambiente e Sustentabilidade na Amazônia},
+ 	note = {Centro de Ciências do Ambiente}
+}
+
+@misc{abeLinhas:2019, 
+title={AbeLinhas do Conhecimento - Secretaria da Educação}, url={https://educacao.curitiba.pr.gov.br/conteudo/abelinhas-do-conhecimento/10496},
+journal={Portal Educação}, 
+author={CURITIBA, Prefeitura Municipal de }, 
+year={2019} }
+
+@techreport{costa:1998,
+  author       = {Carlos Antônio Reinaldo Costa},
+  title        = {Introdução a processamento digital de imagens: uma abordagem voltada para sensoriamento remoto e funcionalidades do sistema SPRING},
+  institution  = {Embrapa Informática Agropecuária},
+  year         = {1998},
+  number       = {Doc. 4},
+  address      = {Campinas, SP},
+  type         = {Documento Técnico},
+  url          = {https://www.infoteca.cnptia.embrapa.br/handle/doc/6283}
+}
+ @article{Schiabel:2019, title={Processamento e Análise de Imagens Médicas}, volume={13}, DOI={10.29384/rbfm.2019.v13.n1.p34-48}, journal={Revista Brasileira de Física Médica}, author={Marques Da Silva, Ana and Patrocinio, Ana and Schiabel, Homero}, year={2019}, month={sept}, pages={34} }
+
+ @article{Vital_Ferreira_2024, title={Uso do Processamento Digital de imagens para Obtenção de Macrotextura e Microtextura de Pavimentos Asfálticos}, volume={30}, rights={Copyright (c) 2024 Revista Eletrônica do Seminário de Iniciação Científica da UFERSA}, url={https://periodicos.ufersa.edu.br/rsemic/article/view/13671},  number={11}, journal={Revista Eletrônica do Seminário de Iniciação Científica da UFERSA}, author={Vital, Pablo Manoel Santana and Ferreira, Wellington Lorran Gaia}, year={2024}, language={pt} }
+@article{silva2024identificacao,
+  author       = {Jefferson Souza e Silva and Francisco Ramos de Melo and Carlos Renato Ferreira and Sabrina Dias de Oliveira and Maria Joselma de Moraes},
+  title        = {Identificação da área foliar do feijoeiro por meio de técnicas de processamento digital de imagens},
+  journal      = {Revista Observatorio de la Economía Latinoamericana},
+  volume       = {22},
+  number       = {12},
+  pages        = {01--12},
+  year         = {2024},
+  issn         = {1696-8352},
+  publisher    = {Revista Observatorio de la Economía Latinoamericana},
+  address      = {Curitiba},
+  doi          = {10.55905/oelv22n12-067},
+  url          = {https://dialnet.unirioja.es/servlet/articulo?codigo=10265348}
+}
+
+ @article{Soares_Siqueira_2024, title={Sensoriamento remoto e geoprocessamento como ferramenta de prevenção de risco: mapeamento de áreas suscetíveis à inundação em Anajás-PA}, volume={22}, ISSN={1696-8352}, url={https://ojs.observatoriolatinoamericano.com/ojs/index.php/olel/article/view/6102}, DOI={10.55905/oelv22n8-015}, number={8}, journal={OBSERVATÓRIO DE LA ECONOMÍA LATINOAMERICANA}, author={Soares, Eduardo Ayron Gomes and Siqueira, Gilmar Wanzeller}, year={2024}, month=aug, pages={e6102–e6102}, language={en} }
+
+@book{florenzano2011iniciacao,
+  author       = {Florenzano, Teresa Gallotti},
+  title        = {Iniciação em Sensoriamento Remoto},
+  publisher    = {Oficina de Textos},
+  address      = {São Paulo},
+  year         = {2011},
+  edition      = {3},
+  pages        = {128},
+  isbn         = {8579750644, 9788579750649},
+  note         = {Visualização no Google Books, ID: 18GkH5X81XcC}
+}
+
+
+@article{wegner_2024, title={Sat-SINR: High-Resolution Species Distribution Models Through Satellite Imagery}, volume={X-2-2024}, url={https://www.zora.uzh.ch/id/eprint/266316/1/ZORA_isprs_annals_X_2_2024_41_2024.pdf}, DOI={https://doi.org/10.5194/isprs-annals-x-2-2024-41-2024}, journal={ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences}, author={Dollinger, Johannes and Brun, Philipp and Sainte Fare Garnot, Vivien and Wegner, Jan Dirk}, year={2024}, month={Jun}, pages={41–48} }
+
+@article{Abadijoo2025,
+  author    = {Mahdieh Abadijoo and Mehdi Gholamalifard and Mehdi Mokhtarzade and Parviz Jokar and Tiit Kutser and Andrey G. Kostianoy and Aleksander V. Semenov},
+  title     = {GIS-based species distribution modeling of invasive Mnemiopsis leidyi in the southern Caspian Sea using satellite imageries},
+  journal   = {The Egyptian Journal of Remote Sensing and Space Sciences},
+  year      = {2025},
+  volume    = {28},
+  pages     = {63--76},
+  doi       = {10.1016/j.ejrs.2024.12.002},
+  url       = {https://www.sciencedirect.com/science/article/pii/S1110982324000887},
+  publisher = {Elsevier},
+  note      = {Available online 10 January 2025}
+}
+ @inproceedings{Picek_Botella_Servajean_Leblanc_Palard_Larcher_Deneu_Marcos_Bonnet_Joly_2024, title={GeoPlant: Spatial Plant Species Prediction Dataset}, volume={37}, url={https://proceedings.neurips.cc/paper_files/paper/2024/file/e4e7de47202bda8133dd3e8b46205cf2-Paper-Datasets_and_Benchmarks_Track.pdf}, booktitle={Advances in Neural Information Processing Systems}, publisher={Curran Associates, Inc.}, author={Picek, Lukas and Botella, Christophe and Servajean, Maximilien and Leblanc, César and Palard, Rémi and Larcher, Théo and Deneu, Benjamin and Marcos, Diego and Bonnet, Pierre and Joly, Alexis}, editor={Globerson, A. and Mackey, L. and Belgrave, D. and Fan, A. and Paquet, U. and Tomczak, J. and Zhang, C.}, year={2024}, pages={126653–126676} }
+
+    @article{Crego:2024,
+author = {Crego, R. D. and Fennessy, J. and Brown, M. B. and Connette, G. and Stacy-Dawes, J. and Masiaine, S. and Stabach, J. A.},
+title = {Combining species distribution models and moderate resolution satellite information to guide conservation programs for reticulated giraffe},
+journal = {Animal Conservation},
+volume = {27},
+number = {2},
+pages = {160-170},
+keywords = {Giraffa reticulata, habitat suitability models, Landsat, ALOS-PALSAR, reintroductions, species distribution modeling, Google Earth Engine},
+doi = {https://doi.org/10.1111/acv.12894},
+url = {https://zslpublications.onlinelibrary.wiley.com/doi/abs/10.1111/acv.12894},
+eprint = {https://zslpublications.onlinelibrary.wiley.com/doi/pdf/10.1111/acv.12894},
+year = {2024}
+}
+
+@misc{vantiel2024multiscalemultimodalspeciesdistribution,
+      title={Multi-Scale and Multimodal Species Distribution Modeling}, 
+      author={Nina van Tiel and Robin Zbinden and Emanuele Dalsasso and Benjamin Kellenberger and Loïc Pellissier and Devis Tuia},
+      year={2024},
+      eprint={2411.04016},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2411.04016}, 
+}
+@book{chen_peng_li_chen, title={Combining Present-Only and Present-Absent Data with Pseudo-Label Generation for Species Distribution Modeling Notebook for the LifeCLEF Lab at CLEF 2024}, url={https://ceur-ws.org/Vol-3740/paper-189.pdf}, author={Chen, Yi-Chia and Peng, Tai and Li, Wei-Hua and Chen, Chu-Song} }
+
+
+@article{Gupta_Zuquim_Tuomisto_2024, title={Seamless Landsat-7 and Landsat-8 data composites covering all Amazonia}, volume={57}, ISSN={2352-3409}, url={https://www.sciencedirect.com/science/article/pii/S235234092400996X}, DOI={https://doi.org/10.1016/j.dib.2024.111034},  journal={Data in Brief}, author={Gupta, Rajit and Zuquim, Gabriela and Tuomisto, Hanna}, year={2024}, pages={111034} }
+
+@book{murray_2024, title={COMPARING TWO SPECIES DISTIBUTION MODELS USING SATELLITE ONLY AND READY-MADE ENVIRONMENTAL VARIABLES FOR THE DAKOTA SKIPPER (Hesperia dacotae), INTERLAKE REGION OF MANITOBA, CANADA}, url={https://winnspace.uwinnipeg.ca/xmlui/bitstream/handle/10680/2138/Murray_Colin_MSc_Thesis_Examination_Revised_Version_2024-05-13.pdf?sequence=1&isAllowed=y}, author={Murray, Colin}, year={2024} }
+@book{picek:2024, title={Overview of GeoLifeCLEF 2024: Species Composition Prediction with High Spatial Resolution at Continental Scale using Remote Sensing}, url={https://agritrop.cirad.fr/613023/1/613023.pdf}, author={Picek, Lukas and Botella, Christophe and Servajean, Maximilien and Leblanc, César and Palard, Rémi and Larcher, Théo and Deneu, Benjamin and Marcos, Diego and Estopinan, Joaquim and Bonnet, Pierre and Joly, Alexis} }
+
+
+@article{Oliveira_Bernardino_Vieira_Augusto_2025, title={Classification of animal species via deep neural networks and species distribution modeling: a systematic review}, volume={58}, ISSN={1573-7462}, url={https://doi.org/10.1007/s10462-024-11074-w}, DOI={10.1007/s10462-024-11074-w}, number={8}, journal={Artificial Intelligence Review}, author={Oliveira, Mateus Braga and Bernardino, Heder Soares and Vieira, Alex Borges and Augusto, Douglas A.}, year={2025}, month=may, pages={230} }
+
+@article{Giachello_Lefosse_Simoncini_Bonato_2025, title={Species distribution models for the conservation of a micro-endemic animal: the contribution of regional land cover}, volume={34}, ISSN={1572-9710}, url={https://doi.org/10.1007/s10531-025-03036-7}, DOI={10.1007/s10531-025-03036-7},  number={5}, journal={Biodiversity and Conservation}, author={Giachello, Simone and Lefosse, Sara and Simoncini, Andrea and Bonato, Lucio}, year={2025}, month=apr, pages={1689–1707} }
+@article{Cupiche-Herrera_Westwood_McLaren_2024, title={Field-validated species distribution model of Canada Warbler (Cardellina canadensis) in Northwestern Ontario}, volume={19}, url={http://www.ace-eco.org/vol19/iss2/art10/}, DOI={10.5751/ACE-02696-190210},  number={2}, journal={Avian Conservation and Ecology}, publisher={The Resilience Alliance}, author={Cupiche-Herrera, Vianney J. and Westwood, Alana R. and McLaren, Brian E.}, year={2024} }
+@phdthesis{DeGiorgi2025,
+  author       = {Paola De Giorgi},
+  title        = {Enhancing Species Distribution Modelling through novel approaches to monitor an endemic species},
+  school       = {Università degli Studi di Pisa},
+  year         = {2025},
+  month        = jul,
+  note         = {Dottorato di Ricerca},
+  url          = {https://hdl.handle.net/20.500.14242/216550}
+}
+@article{Jefferys:2024,
+title = {Breeding habitat loss linked to declines in Rufous Hummingbirds},
+author = {Jefferys, Kendall M. and Betts, Matthew G. and Robinson, W. Douglas and Curtis, Jenna R.F. and Tyler Hallman and Smith, Adam C. and Chloe Stevens and Jesus Aguirre-Gutierrez},
+year = {2024},
+month = aug,
+doi = {10.5751/ACE-02681-190202},
+language = {English},
+volume = {19},
+journal = {Avian Conservation and Ecology},
+issn = {1712-6568},
+publisher = {Resilience Alliance},
+number = {2},
+}
+@article{Spondylidis_Giannoulaki_Machias_Batzakas_Topouzelis_2024, title={A geospatial web service for small pelagic fish spatial distribution modeling and mapping with remote sensing}, volume={36}, ISSN={2352-9385}, url={https://www.sciencedirect.com/science/article/pii/S2352938524001861}, DOI={https://doi.org/10.1016/j.rsase.2024.101322},  journal={Remote Sensing Applications: Society and Environment}, author={Spondylidis, Spyros and Giannoulaki, Marianna and Machias, Athanassios and Batzakas, Ioannis and Topouzelis, Konstantinos}, year={2024}, pages={101322} }
+
+ @article{Crispim-Mendes_Valerio_Marques_Pita_Godinho_Silva_2024, title={High-resolution species distribution modelling reveals spatio-temporal variability of habitat suitability in a declining grassland bird}, volume={39}, ISSN={1572-9761}, url={https://doi.org/10.1007/s10980-024-01848-6}, DOI={10.1007/s10980-024-01848-6}, abstractNote={Species distribution models (SDMs) may provide accurate predictions of species occurrence across space and time, being critical for effective conservation planning.}, number={3}, journal={Landscape Ecology}, author={Crispim-Mendes, Tiago and Valerio, Francesco and Marques, Ana Teresa and Pita, Ricardo and Godinho, Sérgio and Silva, João Paulo}, year={2024}, month=feb, pages={49} }
+
+@article{BRANCO2023110091,
+title = {The use of machine learning in species threats and conservation analysis},
+journal = {Biological Conservation},
+volume = {283},
+pages = {110091},
+year = {2023},
+issn = {0006-3207},
+doi = {https://doi.org/10.1016/j.biocon.2023.110091},
+url = {https://www.sciencedirect.com/science/article/pii/S0006320723001921},
+author = {Vasco Veiga Branco and Lu{\'\i}s Correia and Pedro Cardoso},
+keywords = {Artificial intelligence, Conservation Biology, Species conservation, Extinction risk, Systematic review}
+}
+
+@article{illoldi:2008,
+author = {Illoldi, Patricia and Tania, Escalante},
+year = {2008},
+month = {01},
+pages = {7-12},
+title = {De los modelos de nicho ecológico a las áreas de distribución geográfica},
+volume = {3}
+}
+
+
+@article{wang:2024,
+title = {Species distribution modeling based on MaxEnt to inform biodiversity conservation in the Central Urban Area of Chongqing Municipality},
+journal = {Ecological Indicators},
+volume = {158},
+pages = {111491},
+year = {2024},
+issn = {1470-160X},
+doi = {https://doi.org/10.1016/j.ecolind.2023.111491},
+url = {https://www.sciencedirect.com/science/article/pii/S1470160X23016333},
+author = {Fang Wang and Xingzhong Yuan and Yingjun Sun and Yaohui Liu},
+keywords = {Species potential distribution, Biodiversity hotspots, Gap analysis, MaxEnt model, the Central Urban Area of Chongqing Municipality},
+}
+
+@article{zhao:2024,
+author = {Zhao, Yipei and Liu, Jianfeng and Wang, Qi and Huang, Ruizhi and Nie, Wen and Yang, Shaowei and Cheng, Xiangfen and Li, Maihe},
+title = {Occurrence Data Sources Matter for Species Distribution Modeling: A Case Study of Quercus variabilis Based on Biomod2},
+journal = {Ecology and Evolution},
+volume = {15},
+number = {5},
+pages = {e71390},
+keywords = {Biomod2, climate change, different occurrence data sources, Quercus variabilis, suitable habitats},
+doi = {https://doi.org/10.1002/ece3.71390},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/ece3.71390},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/ece3.71390},
+note = {e71390 ECE-2024-12-02633.R1},
+year = {2025}
+}
+ @article{Edalat_2025, title={Species distribution modeling of Malva neglecta Wallr. weed using ten different machine learning algorithms: An approach to site-specific weed management (SSWM)}, volume={167}, ISSN={1161-0301}, url={https://www.sciencedirect.com/science/article/pii/S1161030125000759}, DOI={https://doi.org/10.1016/j.eja.2025.127579}, journal={European Journal of Agronomy}, author={Dastres, Emran and Esmaeili, Hassan and Edalat, Mohsen}, year={2025}, pages={127579} }
+
+@article{Oskolski_2024, title={Late Pleistocene glacial expansion of a low-latitude species Magnolia insignis: Megafossil evidence and species distribution modeling}, volume={158}, ISSN={1470-160X}, url={https://www.sciencedirect.com/science/article/pii/S1470160X23016618}, DOI={https://doi.org/10.1016/j.ecolind.2023.111519}, journal={Ecological Indicators}, author={Huang, Luliang and Li, Shufeng and Huang, Weiye and Jin, Jianhua and Oskolski, Alexei A.}, year={2024}, pages={111519} }
+
+ @article{han_2024, title={Species distribution modeling combined with environmental DNA analysis to explore distribution of invasive alien mosquitofish (Gambusia affinis) in China}, volume={31}, ISSN={1614-7499}, url={https://doi.org/10.1007/s11356-024-32935-5}, DOI={10.1007/s11356-024-32935-5}, number={17}, journal={Environmental Science and Pollution Research}, author={Han, Xu and Chen, Jinxiao and Wu, Lang and Zhang, Guo and Fan, Xiaoteng and Yan, Tao and Zhu, Long and Guan, Yongjing and Zhou, Linjun and Hou, Tingting and Xue, Xue and Li, Xiangju and Wang, Mingrong and Xing, Haoran and Xiong, Xiaofan and Wang, Zaizhao}, year={2024}, month=apr, pages={25978–25990} }
+
+@article{gutierrez:2024,
+    author = {Gutiérrez-Rodríguez, Jorge and Domenech-Fernández, Miguel and Barranco, Pablo and García-París, Mario},
+    title = {Phylogeography and species distribution modeling unveil unnoticed Pliocene diversity: the case of a montane Iberian bush-cricket, Antaxius spinibrachius (Orthoptera: Tettigoniidae)},
+    journal = {Insect Systematics and Diversity},
+    volume = {8},
+    number = {5},
+    pages = {8},
+    year = {2024},
+    month = {10},
+    issn = {2399-3421},
+    doi = {10.1093/isd/ixae023},
+    url = {https://doi.org/10.1093/isd/ixae023},
+    eprint = {https://academic.oup.com/isd/article-pdf/8/5/8/60080035/ixae023.pdf},
+}
+ @article{Singleton:2024, title={Species distribution modeling for disease ecology: A multi-scale case study for schistosomiasis host snails in Brazil}, volume={4}, url={https://doi.org/10.1371/journal.pgph.0002224}, DOI={10.1371/journal.pgph.0002224}, number={8}, journal={PLOS Global Public Health}, publisher={Public Library of Science}, author={Singleton, Alyson L. and Glidden, Caroline K. and Chamberlin, Andrew J. and Tuan, Roseli and Palasio, Raquel G. S. and Pinter, Adriano and Caldeira, Roberta L. and Mendonça, Cristiane L. F. and Carvalho, Omar S. and Monteiro, Miguel V. and Athni, Tejas S. and Sokolow, Susanne H. and Mordecai, Erin A. and De Leo, Giulio A.}, year={2024}, month=aug, pages={1–28} }
+
+ @article{Sheidai_Noormohammadi_Alishah_2024, title={Future cultivation of cotton for industrial use: landscape cytogenetics and species distribution modeling}, volume={71}, ISSN={1573-5109}, url={https://doi.org/10.1007/s10722-024-01916-5}, DOI={10.1007/s10722-024-01916-5}, number={8}, journal={Genetic Resources and Crop Evolution}, author={Sheidai, Masoud and Noormohammadi, Zahra and Alishah, Omran}, year={2024}, month=dec, pages={4429–4440} }
+
+ @article{Vaishnav_Maurya_Durgapal_Rana_2025, title={An integrative analysis of population genetics and species distribution modeling of Gymnema sylvestre in India}, volume={46}, ISSN={2214-7861}, url={https://www.sciencedirect.com/science/article/pii/S2214786125000117}, DOI={https://doi.org/10.1016/j.jarmap.2025.100631}, author={Vaishnav, Kanchana and Maurya, Aakash and Durgapal, Anjala and Rana, T. S.}, year={2025}, pages={100631} }
+
+ @article{Song_Xu_Long_Wang_Chen_Li_Jiang_Deng_2024, title={Ensemble species distribution modeling and multilocus phylogeography provide insight into the spatial genetic patterns and distribution dynamics of a keystone forest species, Quercus glauca}, volume={24}, ISSN={1471-2229}, url={https://doi.org/10.1186/s12870-024-04830-1}, DOI={10.1186/s12870-024-04830-1},  number={1}, journal={BMC Plant Biology}, author={Song, Ying and Xu, Gang-Biao and Long, Ke-Xin and Wang, Chun-Cheng and Chen, Ran and Li, He and Jiang, Xiao-Long and Deng, Min}, year={2024}, month=mar, pages={168} }
+
+@Article{radovi:2025,
+AUTHOR = {Radović, Andreja and Kapelj, Sven and Taylor, Louie Thomas},
+TITLE = {Utilizing Remote Sensing Data for Species Distribution Modeling of Birds in Croatia},
+JOURNAL = {Diversity},
+VOLUME = {17},
+YEAR = {2025},
+NUMBER = {6},
+ARTICLE-NUMBER = {399},
+URL = {https://www.mdpi.com/1424-2818/17/6/399},
+ISSN = {1424-2818},
+DOI = {10.3390/d17060399}
+}
+
+ @article{Zhang_He_Hui_Sha_Cheng_2025, title={Evolutionary history and population dynamics of a widespread mantis shrimp Oratosquilla oratoria: Evidence from mitogenomic analysis and species distribution modeling}, volume={81}, ISSN={2352-4855}, url={https://www.sciencedirect.com/science/article/pii/S235248552400642X}, DOI={https://doi.org/10.1016/j.rsma.2024.104009}, journal={Regional Studies in Marine Science}, author={Zhang, Liwen and He, Lin and Hui, Min and Sha, Zhongli and Cheng, Jiao}, year={2025}, pages={104009} }
+
+
+ @article{Carlos:2025, title={Light-level geolocators and species distribution modeling reveal that the Vulnerable Sporophila cinnamomea (Chestnut Seedeater) migrates through the Paraná-Paraguay system to Central Brazil}, volume={127}, ISSN={0010-5422}, url={https://doi.org/10.1093/ornithapp/duaf002}, DOI={10.1093/ornithapp/duaf002}, number={2}, journal={Ornithological Applications}, author={Rosoni, Jonas Rafael R and Fontana, Carla S and Krammes Filho, Hernandi F and Carlos, Caio J}, year={2025}, month=jan, pages={duaf002} }
+
+ @article{Tao_Liu_Dao_Liu_Yang_Sun_2024, title={Guiding conservation strategies for China’s Corybas species through species distribution modeling}, volume={53}, ISSN={2351-9894}, url={https://www.sciencedirect.com/science/article/pii/S2351989424002129}, DOI={https://doi.org/10.1016/j.gecco.2024.e03008}, journal={Global Ecology and Conservation}, author={Tao, Li-Dan and Liu, Yu-Hang and Dao, Zhi-Ling and Liu, De-Tuan and Yang, Jing and Sun, Wei-Bang}, year={2024}, pages={e03008} }
+
+ @article{Adjacou_Idohou_Yaoitcha_Ayena_Houehanou_Gouwakinnou_2025, title={Integrating phenotypic and genetic diversity, and species distribution modeling to set long-term conservation strategies for the endangered Afzelia africana in Benin (West Africa)}, volume={20}, ISSN={2666-7193}, url={https://www.sciencedirect.com/science/article/pii/S266671932500038X}, DOI={https://doi.org/10.1016/j.tfp.2025.100810},  journal={Trees, Forests and People}, author={Adjacou, Dowo Michée and Idohou, Rodrigue and Yaoitcha, Alain Sèakpo and Ayena, Jacques Kadjobgé Idohou and Houehanou, Thierry Dehouegnon and Gouwakinnou, Gérard Nounagnon}, year={2025}, pages={100810} }
+
+ @article{Ruzzier_Lupi_Tirozzi_Dondina_Orioli_Jucker_Bani_2024, title={A two-step species distribution modeling to disentangle the effect of habitat and bioclimatic covariates on Psacothea hilaris, a potentially invasive species}, volume={26}, ISSN={1573-1464}, url={https://doi.org/10.1007/s10530-024-03283-9}, DOI={10.1007/s10530-024-03283-9}, number={6}, journal={Biological Invasions}, author={Ruzzier, Enrico and Lupi, Daniela and Tirozzi, Pietro and Dondina, Olivia and Orioli, Valerio and Jucker, Costanza and Bani, Luciano}, year={2024}, month=june, pages={1861–1881} }
+
+ @article{Dogbo_Salako_Agoundé_Dimobe_Adiko_Gebauer_Yao_Kakaï_2025, title={Potential impacts of future climate on twelve key multipurpose tree species in Benin: Insights from species distribution modeling for biodiversity conservation}, volume={19}, ISSN={2666-7193}, url={https://www.sciencedirect.com/science/article/pii/S2666719324002504}, DOI={https://doi.org/10.1016/j.tfp.2024.100744}, journal={Trees, Forests and People}, author={Dogbo, Sèdoami Flora and Salako, Kolawolé Valère and Agoundé, Gafarou and Dimobe, Kangbéni and Adiko, Adjo Estelle Geneviève and Gebauer, Jens and Yao, Constant Yves Adou and Kakaï, Romain Glèlè}, year={2025}, pages={100744} }
+
+
+  @article{Dogbo_2025, title={Potential impacts of future climate on twelve key multipurpose tree species in Benin: Insights from species distribution modeling for biodiversity conservation}, volume={19}, ISSN={2666-7193}, url={https://www.sciencedirect.com/science/article/pii/S2666719324002504}, DOI={https://doi.org/10.1016/j.tfp.2024.100744}, journal={Trees, Forests and People}, author={Dogbo, Sèdoami Flora and Salako, Kolawolé Valère and Agoundé, Gafarou and Dimobe, Kangbéni and Adiko, Adjo Estelle Geneviève and Gebauer, Jens and Yao, Constant Yves Adou and Kakaï, Romain Glèlè}, year={2025}, pages={100744} }
+
+
+
+ @article{Overly_Lecours_2024, title={Mapping queen snapper (Etelis oculatus) suitable habitat in Puerto Rico using ensemble species distribution modeling}, volume={19}, url={https://doi.org/10.1371/journal.pone.0298755}, DOI={10.1371/journal.pone.0298755}, publisher={Public Library of Science}, author={Overly, Katherine E. and Lecours, Vincent}, year={2024}, month=feb, pages={1–25} }
+
+
+@article{Zenebe_2024,
+author = {Zenebe, Gebreyohannes and Zenebe, Amanuel and Birhane, Emiru and Girma, Atkilt and Shiferaw, Henok},
+title = {Revealing suitable habitats for Juniperus procera and Olea europaea tree species in the remnant dry Afromontane forests of Ethiopia: Insights from ensemble species distribution modeling approach},
+journal = {Ecology and Evolution},
+volume = {14},
+number = {10},
+pages = {e70343},
+keywords = {Desa'a forest, habitat suitability, Hugumbirda Grat-Kahsu forest},
+doi = {https://doi.org/10.1002/ece3.70343},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/ece3.70343},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/ece3.70343},
+note = {e70343 ECE-2024-02-00231.R2},
+year = {2024}
+}
+
+
+
+@article{Santos_2010, title={Abelhas nativas: polinizadores em declínio}, volume={8}, url={https://www.naturezaonline.com.br/revista/article/view/387}, number={3}, journal={Natureza Online}, author={Santos, Aline B}, year={2010}, month={ago.}, pages={103–106} }
+
+@article{roberto_de_de_alex_rodrigues_2020, title={Nesting behavior of stingless bees}, volume={21}, url={https://www.scielo.br/j/cab/a/ffcH8cdxFCGNGvJTBXR7xSn/?lang=en}, DOI={https://doi.org/10.1590/1809-6891v21e-58736}, journal={Ciência Animal Brasileira}, publisher={Universidade Federal de Goiás}, author={Roberto, Carlos and de, Italo and de, Péricles and Alex and Rodrigues, Geovergue}, year={2020}, month={Jan} }
+
+‌@article{costa_viana_farias_santos_2012, title={Meliponicultura em comunidades tradicionais do Amazonas Beekeeping in traditional communities of the Amazon}, url={https://orgprints.org/id/eprint/22792/1/12818-54117-1-PB.pdf}, author={Costa, Tiago and Viana and Farias and Góes, Carlos and Brandão and Clévison, Dos and Santos}, year={2012} }
+
+‌@article{Freitas:2000,
+  title={Preserva{\c{c}}{\~a}o de Abelha Sem Ferr{\~a}o no Semi{\'a}rido Atrav{\'e}s da Cria{\c{c}}{\~a}o Racional},
+  url={http://www.prac.ufpb.br/anais/Icbeu_anais/anais/meioambiente/abelhas.pdf},
+  author={Freitas, Maria de F{\'a}tima and Marinho, Itaragil Ven{\^a}ncio and Guilherme, Ricardo de Figueiredo and CALDAS, Alexsandro Lacerda},
+  journal={Anais Do Encontro Paraibano De Educa{\c{c}}{\~a}o Ambiental, Jo{\~a}o Pessoa},
+  year={2000}
+}
+@article{Santos:2020, 
+title={A Meliponicultura atua na conscientização ambiental e incrementa a renda de comunidades carentes no Maranhão / Meliponicultura works to raise environmental awareness and increase the income of poor communities in Maranhão}, 
+volume={6}, 
+url={https://www.brazilianjournals.com/index.php/BRJD/article/view/15888/13034},
+number={8}, 
+journal={Brazilian Journal of Development}, 
+author={Gabriel Garcês Santos and Jonas Alves Mesquita and Fernanda, Bruna and Adriano, Claudio and Rômulo Nunes Sousa and Hugo Almeida Ferreira and Barros, Silva}, 
+year={2020}, 
+pages={63578–63585} }
+
+@mastersthesis{rodrigues2005etnoconhecimento,
+  title={Etnoconhecimento sobre abelhas sem ferr{\~a}o: saberes e pr{\'a}ticas dos {\'\i}ndios Guarani M\'By{\'a} na Mata-Atl{\^a}ntica.},
+  author={Rodrigues, Arnaldo dos Santos},
+  year={2005},
+  url={https://teses.usp.br/teses/disponiveis/91/91131/tde-15072005-150814/pt-br.php},
+  school={Universidade de S{\~a}o Paulo}
+}
+
+@techreport{Pereira:2017,
+  author       = {Pereira, Fábia de Mello and Souza, Bruno de Almeida and Lopes, Maria Teresa do Rêgo},
+  title        = {Criação de abelhas-sem-ferrão},
+  institution  = {Embrapa Meio-Norte},
+  address      = {Teresina, PI, Brasil},
+  year         = {2017},
+  type         = {Folheto},
+  note         = {Disponível em: \url{https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1079116/1/CriacaoAbelhaSemFerrao.pdf}, acesso em 11 de agosto de 2025},
+}
+
+@article{dos2021diversidade,
+  title={Diversidade de abelhas sem ferr{\~a}o e seu uso como recurso natural no Brasil: permiss{\~o}es e restri{\c{c}}{\~o}es legais consorciadas a pol{\'\i}ticas p{\'u}blicas},
+  author={dos Santos, Charles Fernando and Raguse-Quadros, Mateus and Ramos, Jenifer Dias and da Silva, Nicole Luize Garcia and de Carvalho, Fernanda Gomes and de Barros, Cristiane Andrade and Blochtein, Betina},
+  journal={Revista Brasileira de Meio Ambiente},
+  volume={9},
+  number={2},
+  year={2021}
+}
+
+@article{BERINGER_MACIEL_TRAMONTINA_2019, title={O declínio populacional das abelhas: causas, potenciais soluções e perspectivas futuras}, volume={5}, url={https://revista.uergs.edu.br/index.php/revuergs/article/view/1686}, DOI={10.21674/2448-0479.51.18-27},  number={1}, journal={Revista Eletrônica Científica da UERGS }, author={BERINGER, Juliana and MACIEL, Fábio Luis and TRAMONTINA, Francine Fioravanso}, year={2019}, month={abr.}, pages={18–27} }
